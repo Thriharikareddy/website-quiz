@@ -1,0 +1,82 @@
+.progress-bar {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress {
+    height: 10px;
+    background-color: #3498db;
+    width: 0%;
+}
+
+#timer {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+body{
+
+    font-family: Arial,sans-serif;
+    background-color: #F5F0CD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.quiz-container{
+    background-color:#FFCC00;
+    padding:20px;
+    border-radius: 8px;
+    width:800px;
+    box-shadow:0 0 20px rgb(0,0,0,0.2) ;
+    text-align: center;
+    color:#471396;
+}
+.btn{
+    background-color:blueviolet;
+    color: white;
+    border:none;
+    padding:10px;
+    margin:5px;
+    cursor:pointer;
+    border-radius: 4px;
+}
+.btn:hover{
+    background-color:#471396;
+}
+#next-btn{
+    background-color:#471396;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    cursor:pointer;
+    border-radius: 4px;
+    margin-top:10px;
+}
+@media (max-width: 600px) {
+    .quiz-container {
+        width: 90%;  /* Makes the quiz fit smaller screens */
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #next-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .btn-grid {
+        grid-template-columns: 1fr; /* Stack buttons in one column on mobile */
+    }
+
+    #timer {
+        font-size: 14px;
+    }
+}
